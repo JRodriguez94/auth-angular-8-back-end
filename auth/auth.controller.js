@@ -34,7 +34,7 @@ exports.loginUser = (req, res, next) => {
     email: req.body.email,
     password: req.body.password
   }
-  console.log("Request.body", req);
+  console.log("Request.body", req.body);
   User.findOne({ email: userData.email }, (err, user) => {
     if (err) return res.status(500).send('Server error!');
 
