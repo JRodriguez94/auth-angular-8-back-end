@@ -1,6 +1,6 @@
 
 const mongoose = require('mongoose');
-const dbURL = require('./properties').DBR;
+const dbURL = require('./properties').DB;
 
 module.exports = () => {
   mongoose.connect(dbURL, { useNewUrlParser: true })

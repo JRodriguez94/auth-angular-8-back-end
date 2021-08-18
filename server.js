@@ -1,4 +1,4 @@
-'use strict'
+// 'use strict'
 const cors = require('cors');
 const authRoutes = require('./auth/auth.routes');
 const express = require('express');
